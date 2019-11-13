@@ -2,7 +2,11 @@
 
 This is a rewrite of [Olalekan Animashaun](https://kimolalekan.github.io/#)'s React wrapper for [Devices.css](http://marvelapp.github.io/devices.css/). It adds a snazzy &lt;Dock&gt; component to put your &lt;Device&gt; frame in and allows you to load whatever you want to into the &lt;Device&gt; through props.show or as &lt;Device&gt;{children}&lt;/Device&gt;
 
-Preview: none yet...dev folder soon, [storybook](https://github.com/storybookjs/storybook) later.
+**Preview**: none yet...dev folder soon, [storybook](https://github.com/storybookjs/storybook) later.
+
+**React Device Frame** will work amazing soon becuase we're using browserstack.com to make sure our code works in every browser (\*cough\* I'm looking at you IE). Check out the whole ball of awesome here: https://www.browserstack.com/live/features. ...Their logo is pretty pimtacular too.
+
+<img src="https://raw.githubusercontent.com/perfectcube/react-device-frame/master/docs/asset/browserstack-logo-600x315.png" style="zoom:50%;" />
 
 **Supported devices**
 
@@ -35,7 +39,7 @@ Preview: none yet...dev folder soon, [storybook](https://github.com/storybookjs/
 
 **Installation... npm? not yet.**
 
-... no npm package for this version, **so you can’t do this**:
+... <u>no npm package for this version</u>, **so you can’t do this**:
 
 ```bash
 npm i react-device-frame --save
@@ -66,7 +70,7 @@ Drop this into your `src/jsconfig.json` file:
 }
 ```
 
-... and you're off to the races!
+... and you’re off to the races!
 
 **Usage**
 
@@ -101,9 +105,9 @@ class ShowComponentsAsChildren extends Component {
     return (
       <Device use="macbook-pro">
       	<div>
-      		<p>this is content</p>
-      		<p>wahtever you want to have in here is fine</p>
-      		<Button>I'm a custom component</Button>
+      	  <p>this is content</p>
+      	  <p>wahtever you want to have in here is fine</p>
+      	  <Button>I'm a custom component</Button>
       	</div>
     	</Device>
     );
@@ -129,7 +133,7 @@ class SpiffyMobileDevicesDock extends Component {
     );
     
     return (
-    	<Dock
+      <Dock
         device="iphone-x" 
         tooltip="Show a mobile Preview" 
         open="Mobile Preview" 
@@ -147,16 +151,16 @@ class SpiffyMobileDevicesDock extends Component {
         hide={['ipad','macbook-pro']}
         padTop={55}
         orientation="protrait"
-       >
-				<Device 
-        	use="iphone-x"
+      >
+        <Device 
+          use="iphone-x"
           color="black" 
           orientation="protrait"
-         >{content}</Device>
-       </Dock>
+        >{content}</Device>
+      </Dock>
     );
   }
-  
+
 }
 ```
 
@@ -187,4 +191,4 @@ class SpiffyMobileDevicesDock extends Component {
 
 LICENSE: **MIT**
 
-**Developer:** [Dan Bryant](https://github.com/cube-dan). **Original Author:** [Olalekan Animashaun](https://kimolalekan.github.io)
+**Developers:** [Olalekan Animashaun](https://kimolalekan.github.io), [Dan Bryant](https://github.com/cube-dan)
