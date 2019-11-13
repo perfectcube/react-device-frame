@@ -6,7 +6,7 @@ This is a rewrite of [Olalekan Animashaun](https://kimolalekan.github.io/#)'s Re
 
 **React Device Frame** will work amazing soon becuase we're using browserstack.com to make sure our code works in every browser (\*cough\* I'm looking at you IE). Check out the whole ball of awesome here: https://www.browserstack.com/live/features. ...Their logo is pretty pimtacular too.
 
-<img src="https://raw.githubusercontent.com/perfectcube/react-device-frame/master/docs/asset/browserstack-logo-600x315.png" style="zoom:50%;" />
+![](https://raw.githubusercontent.com/perfectcube/react-device-frame/master/docs/asset/browserstack-logo-600x315.png =500x)
 
 **Supported devices**
 
