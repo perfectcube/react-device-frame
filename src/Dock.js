@@ -7,7 +7,8 @@ import {
   Dropdown,
   Icon,
 } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
+// FIXME: Figure out a way to dynamically include the semantic-ui-css styles based on a prop
+// import 'semantic-ui-css/semantic.min.css';
 import ReactTooltip from 'react-tooltip';
 import { GithubPicker } from 'react-color';
 import reSize from './lib/reSize';
