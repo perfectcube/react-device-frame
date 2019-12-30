@@ -77,6 +77,8 @@ Drop this into your `src/jsconfig.json` file:
 ```jsx
 import React, { Component } from "react";
 import Device from "lib/react-device-frame";
+// Pulls in <Dock> styles. Dont include this if you're already using Sematic-UI-React styles or theming your app with the SUIr theme layer, see: https://react.semantic-ui.com/theming
+import 'semantic-ui-css/semantic.min.css';
 
 class ShowWebpage extends Component {
   render() {
