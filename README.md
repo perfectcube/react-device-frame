@@ -2,7 +2,7 @@
 
 This is a rewrite of [Olalekan Animashaun](https://kimolalekan.github.io/#)'s React wrapper for [Devices.css](http://marvelapp.github.io/devices.css/). It adds a snazzy &lt;Dock&gt; component to put your &lt;Device&gt; frame in and allows you to load whatever you want to into the &lt;Device&gt; through props.show or as &lt;Device&gt;{children}&lt;/Device&gt;
 
-**Preview**: none yet...dev folder soon, [storybook](https://github.com/storybookjs/storybook) later.
+**Preview**: none yet. Docs folder with demo react app, and dedicated github page, coming soon.
 
 **React Device Frame** will work amazing soon becuase we're using browserstack.com to make sure our code works in every browser (\*cough\* I'm looking at you IE). Check out the whole ball of awesome here: https://www.browserstack.com/live/features. ...Their logo is pretty pimtacular too.
 
