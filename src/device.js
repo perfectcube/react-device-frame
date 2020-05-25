@@ -268,7 +268,7 @@ const deviceName = (type) => {
 /**
  * Pass in a device type-name to see if its supported by <Device/>.
  * @param {string} type a valid device type
- * @returns {bool} true if the device is supported
+ * @returns { bool } true if the device is supported
  */
 const deviceSupported = (type) => {
   const supported = _.includes(SUPPORTED_DEVICES,type);
@@ -499,7 +499,7 @@ export default class Device extends Component {
    * Check if a color {check} (name or value) is valid for a given device {type}
    * @param {string} type a valid device type. use Device.getDevices() to see all devices and metadata for each device.
    * @param {string} check a color value or name to check
-   * @returns {bool}
+   * @returns { bool }
    */
   static colorValid(type,check){
     const mapped = colorMap(type,check);
