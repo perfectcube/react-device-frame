@@ -2,7 +2,7 @@
 
 This is a rewrite of [Olalekan Animashaun](https://kimolalekan.github.io/#)'s React wrapper for [Devices.css](http://marvelapp.github.io/devices.css/). It adds a snazzy &lt;Dock&gt; component to put your &lt;Device&gt; frame in and allows you to load whatever you want to into the &lt;Device&gt; through props.show or as &lt;Device&gt;{children}&lt;/Device&gt;
 
-**Preview**: none yet...dev folder soon, [storybook](https://github.com/storybookjs/storybook) later.
+**Preview**: none yet. Docs folder with demo react app, and dedicated github page, coming soon.
 
 **React Device Frame** will work amazing soon becuase we're using browserstack.com to make sure our code works in every browser (\*cough\* I'm looking at you IE). Check out the whole ball of awesome here: https://www.browserstack.com/live/features. ...Their logo is pretty pimtacular too.
 
@@ -187,7 +187,7 @@ class SpiffyMobileDevicesDock extends Component {
 | zoom     | **(optional)** The text on the zoom selector options. The default values are: <br/>{<br/>          full: "Huge",<br/>          large: "Large",<br/>          med: "Medium",<br/>          small: "Small",<br/>} | object   |
 | onData   | **(optional)** A callback that recieves all selected options as a single argument whenever you change an option.  The object you're passed has the following keys<br />• zoom {string} one of: 'full','large','med','small'. this is the currently selected zoom level. <br/>• device {string} one of Device.SUPPORTED_DEVICES, like: "the-device-slug"<br/>• orient {string} "landscape" or "portrait" <br/>• color {string} the currently selected human readable color name. Map this to the #hex color for the <Device/> with Device.colorMap('device-type','color')<br/>• float {string} "right" or "left" | function |
 | hide     | (**optional**) An array of devices to remove from the device selector pulldown. For example, if you wanted to only show phones in the <Dock>'s device selection pulldown you'd do this: hide={['macbook-pro','ipad']}. See: <Device> › Properties › use for valid values. | array    |
-| show     | (**optional**) Let’s you turn off visual elements within the &lt;Dock/&gt;. You have these options, **bold** is default:<br/>• zoom: [**true** \| false] The device zoom pulldown<br/>•switcher: [**true** \| false] The device frame switcher pulldown<br/>•color: [**true** \| false] The color selector<br/>•float: [**true** \| false] The drawer position button <br/> orientation: [true \| false] -- not implimeted yet.<br/>Example:<br/>show={{color:false}} <br/>This would hide the color selection menu for all devices. | object   |
+| show     | (**optional**) Let’s you turn off visual elements within the &lt;Dock/&gt;. You have these options, **bold** is default:<br/>• zoom: [**true** \| false] The device zoom pulldown<br/>• switcher: [**true** \| false] The device frame switcher pulldown<br/>• color: [**true** \| false] The color selector<br/>• float: [**true** \| false] The drawer position button <br/> orientation: [true \| false] -- not implimeted yet.<br/>Example:<br/>show={{color:false}} <br/>This would hide the color selection menu for all devices. | object   |
 | padTop   | (**optional**) A number of pixels that you want to pad the top of the dock down from the top of the window frame. Handy if you're displaying the dock with a header reagion that you don’t want to overlap with the device. | int      |
 | tooltip  | (**optional**) Shows a &lt;ReactTooltip&gt; for the &lt;Dock&gt; open button if you pass in a string. | string   |
 
